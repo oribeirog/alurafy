@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Alurafy - Álbuns</title>
+</head>
+
+<body class="body-album">
+
+  
+    <header>
+    
+        <div class="albuns">
+            <a href="interface.html" target="_self" class="btn7 btn-white7 btn-animate7"><img class="botao-esquerda" src="img/setaesquerda.png" height="55"></a>
+            <h1>ÁLBUNS</h1>
+        </div>
+
+    </header>
+
+    <!--cod do frank-->
+
+    <div class="blonde">
+    <p>blond</p>
+    </div>
+
+    <div class="blonde-playlist">
+        <div>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3mH6qwIy9crq0I9YQbOuDf?utm_source=generator" width="400" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div>
+        <p class="desc-blonde">Produção	<b class="prod-frank">Frank Ocean</b><br>Lançamento <b class="lanc-frank">Agosto de 2016</b><br>Genero <b class="gen-frank">R&B, Hip Hop</b>	</p>
+        </div>
+    </div>  
+
+    <hr> <!--divisoria-->
+
+    <!--cod do tyler-->
+
+    <div class="goblin">
+    <p>GOBLIN</p>
+    </div>
+
+    <div class="goblin-playlist" id="goblin-pl">
+        <div>
+        <p class="desc-goblin">Produção	<b class="prod-tyler">Tyler, the Creator</b><br>Lançamento <b class="lanc-tyler">Maio de 2011</b><br>Genero <b class="gen-tyler">Hip Hop</b>	</p>
+        </div>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5dbCm8qaCdWnNdVyi3urUO?utm_source=generator" width="400" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <hr> <!--divisoria-->
+
+    <!--cod do mac-->
+
+    <div class="dois">
+        <p>2</p>
+    </div>
+
+    <div class="dois-playlist">
+        <div>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2XgBQwGRxr4P7cHLDYiqrO?utm_source=generator" width="400" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div>
+        <p class="desc-dois">Produção	<b class="prod-mac">Mac DeMarco</b><br>Lançamento <b class="lanc-mac">Outubro de 2012</b><br>Genero <b class="gen-mac">Alternativo</b>	</p>
+        </div>
+    </div>  
+
+    <hr> <!--divisoria-->
+
+    <script>
+        // Verifica se a URL contém um parâmetro de posição
+        window.addEventListener('load', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const scrollToPosition = urlParams.get('scrollTo');
+            if (scrollToPosition) {
+                window.scrollTo(0, parseInt(scrollToPosition));
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</hmtl>
